@@ -1,6 +1,6 @@
 ---
 name: catalog-tools
-description: Adds tools to the root README.md awesome-list. Parses Name (url) — description, picks a category, rewrites the blurb into concise Russian, and creates README.md on first write. Use when the user pastes a tool, GitHub/link + description, asks to add/catalog an instrument, or says добавить инструмент / в каталог / в README.
+description: Adds tools to the root README.md awesome-list. Parses Name (url) — description, writes [Name](url) — blurb, picks a category, rewrites into concise Russian, and creates README.md on first write. Use when the user pastes a tool, GitHub/link + description, asks to add/catalog an instrument, or says добавить инструмент / в каталог / в README.
 ---
 
 # Catalog tools
@@ -22,14 +22,14 @@ Free-coding-models (https://github.com/vava-nessa/free-coding-models) — най
 В `README.md` каждая позиция — пункт списка в **таком виде** (длинное тире `—`):
 
 ```
-- Name (https://example.com) — краткое описание
+- [Name](https://example.com) — краткое описание
 ```
 
 - `Name` — имя репозитория или продукта, без лишнего маркетинга в названии
 - URL — канонический (без `.git`, без хвостового `/`, `https://`)
 - Описание — одно предложение на русском, см. правила ниже
 
-Не использовать `[Name](url)` и не писать описание с новой строки.
+Именно `[Name](url)`, иначе GitHub не делает имя кликабельным. Вход пользователя может быть `Name (url) — …` — это разобрать, в файл писать markdown-ссылку. Описание с новой строки не писать.
 
 ## Workflow
 
@@ -67,7 +67,7 @@ Free-coding-models (https://github.com/vava-nessa/free-coding-models) — най
 Итог:
 
 ```
-- Free-coding-models (https://github.com/vava-nessa/free-coding-models) — каталог 170+ бесплатных coding-моделей от 15+ провайдеров с установкой в CLI
+- [Free-coding-models](https://github.com/vava-nessa/free-coding-models) — каталог 170+ бесплатных coding-моделей от 15+ провайдеров с установкой в CLI
 ```
 
 Категория: `Модели и роутинг`.
@@ -151,7 +151,7 @@ Free-coding-models (https://github.com/vava-nessa/free-coding-models) — най
 
 ```
 Добавлено в «Модели и роутинг»:
-- Free-coding-models (https://github.com/vava-nessa/free-coding-models) — каталог 170+ бесплатных coding-моделей от 15+ провайдеров с установкой в CLI
+- [Free-coding-models](https://github.com/vava-nessa/free-coding-models) — каталог 170+ бесплатных coding-моделей от 15+ провайдеров с установкой в CLI
 ```
 
 Если дубликат или не хватает URL — не молчать.
